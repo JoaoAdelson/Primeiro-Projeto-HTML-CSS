@@ -1,4 +1,4 @@
-# 💙 "Para o amor da minha vida"
+# "Para o amor da minha vida"
 
 Uma página romântica e interativa feita com HTML, Tailwind CSS e JavaScript para homenagear alguém muito especial. 💌✨
 
@@ -6,7 +6,7 @@ Uma página romântica e interativa feita com HTML, Tailwind CSS e JavaScript pa
 
 ---
 
-## 💡 Descrição
+##  Descrição
 
 Esse projeto foi desenvolvido como uma forma criativa e carinhosa de demonstrar amor. Ele reúne fotos, um vídeo de fundo relaxante e mensagens afetivas, tudo isso com efeitos visuais sutis e modernos.
 
@@ -14,7 +14,7 @@ Ideal para presentear alguém de maneira digital, criando uma experiência visua
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 -  **Vídeo de fundo** com autoplay (sem som) para um clima acolhedor.
 -  **Galeria de fotos responsiva** com animação ao passar o mouse.
