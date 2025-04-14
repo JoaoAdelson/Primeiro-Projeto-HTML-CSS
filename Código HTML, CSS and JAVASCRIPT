@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para o amor da minha vida 💙</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+<style>
+  #video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.heart {
+  position: fixed;
+  font-size: 30px;
+  color: red;
+  animation: floatHearts 5s linear forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes floatHearts {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.card-foto {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.card-foto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+</style>
+</head>
+<body class="bg-gradient-to-br from-blue-600 to-purple-700 text-white min-h-screen flex flex-col">
+  <video autoplay muted loop id="video-bg">
+    <source src="C:/Users/User/Desktop/img/Praia.mp4" type="video/mp4">
+    
+  </video>
+  <header class="text-center py-6">
+    <h1 class="text-4xl font-bold">Para o amor da minha vida 💙</h1>
+    <p class="text-lg text-white-200 mt-2">Cada momento ao seu lado é inesquecível</p>
+  </header>
+
+  <main class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/001.jpg" alt="FOTO001" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/002.jpg" alt="FOTO002" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/003.jpg" alt="FOTO003" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/004.jpg" alt="FOTO004" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/005.jpg" alt="FOTO005" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/006.JPG" alt="FOTO006" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/007.JPG" alt="FOTO007" class="w-full h-64 object-cover" />
+    </div>
+    <div class="card-foto">
+      <img src="C:/Users/User/Desktop/img/008.JPG" alt="FOTO008" class="w-full h-64 object-cover" />
+    </div>
+  </main>
+
+  <div class="flex flex-col items-center mt-10">
+    <button id="surpriseBtn" class="bg-gradient-to-r from-pink-500 to-purple-500 hover:scale-105 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+      Clique para uma surpresa 💖
+    </button>
+
+    <div class="mt-6 animate-bounce text-5xl">💖</div>
+    <p class="text-white mt-2 italic">Você me faz feliz de um jeito que ninguém mais faz 💌</p>
+
+    <div id="message" class="mt-8 hidden text-center text-xl max-w-md bg-white text-purple-800 p-6 rounded-xl shadow-lg">
+      Você é a melhor parte da minha vida, e sem você tudo perde o brilho. Obrigado por tudo e por tanto, meu amor! É incrível amar você, uma mulher tão carinhosa, inteligente, esforçada e dedicada. Amo ter você ao meu lado e saber que terei para sempre.
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById("surpriseBtn");
+    const msg = document.getElementById("message");
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.textContent = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.bottom = "0";
+      heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+
+    function startHearts() {
+      setInterval(createHeart, 400);
+    }
+
+    btn.addEventListener("click", () => {
+      msg.classList.remove("hidden");
+      startHearts();
+    });
+  </script>
+</body>
+</html>
