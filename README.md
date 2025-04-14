@@ -31,6 +31,6 @@ Ideal para presentear alguém de maneira digital, criando uma experiência visua
 - **Tailwind CSS** (via CDN)
 - **JavaScript Puro (Vanilla JS)**
 
-#Caso queira testar ou presentiar alguem usando este codigo, compie o codigo e altere as imagens e vídeo. Lembre de usar corretamente o caminho das imagens e video para eviar erros.
+#Caso queira testar ou presentiar alguem usando este código, copie o código e altere as imagens e vídeo. Lembre de usar corretamente o caminho das imagens e video para evitar erros.
 
 
